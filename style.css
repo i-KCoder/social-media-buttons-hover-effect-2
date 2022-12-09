@@ -1,0 +1,82 @@
+* {
+  outline:none;
+  text-decoration:none;
+  border:none;
+}
+
+body {
+  background-color: #000;
+  font-size: 2rem;
+  font-family: arial;
+  margin-top:150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+div { 
+  margin: 50px auto;
+}
+
+.circle-button{
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 20%;
+  transition: all 0.2s ease;
+}
+
+.circle-button:hover{
+  animation: circle-anim 0.3s ease forwards;
+  transition: all 0.4s ease;
+}
+
+.grow-container{
+  display: inline-block;
+  margin: 1em;
+}
+
+.to-red:hover{
+  background: #E5393F;
+}
+
+.to-twitter:hover{
+  background: #1DA1F3;
+}
+
+.to-facebook:hover{
+  background: #3B5998;
+}
+
+.to-instagram:hover{
+  background:  #e95950;
+}
+
+.to-youtube:hover{
+  background: #FF4500;
+}
+
+@keyframes circle-anim{
+  0% {
+    
+  }
+  
+  50%{  
+	padding: 0.15em;
+    margin: -0.15em; 
+  }
+  
+  90%{
+    padding: 0.35em;
+    margin: -0.35em; 
+  }
+  
+  100%{
+    padding: 0.40em;
+    margin: -0.40em; 
+  }
+}
+
